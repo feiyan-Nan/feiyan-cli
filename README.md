@@ -35,7 +35,10 @@ Lerna 是一个基于git+npm的多package(多个npm包)项目的管理工具
 
 > Lerna是架构优化的产物, 它揭示了一个架构真理: 项目复杂度提升后, 就需要对项目进行架构优化, 架构优化的主要目标往往都是以效能为核心的
 
-
+```shell
+lerna add axios --scope=@feiyan-cli/core
+lerna add @feiyan-cli/core --scope=@feiyan-cli/fetch 把@feiyan-cli/core放到@feiyan-cli/fetch中
+```
 
 
 
