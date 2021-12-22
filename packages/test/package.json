@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "nanfeiyan <3328921305@qq.com>",
+  "homepage": "https://github.com/nanfeiyan123/feiyan-cli#readme",
+  "license": "ISC",
+  "main": "lib/test.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanfeiyan123/feiyan-cli.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/nanfeiyan123/feiyan-cli/issues"
+  }
+}
