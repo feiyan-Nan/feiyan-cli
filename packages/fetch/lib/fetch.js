@@ -1,5 +1,5 @@
 'use strict';
-const { API } = require('prpr-lerna-core');
+const { API } = require('@feiyan-cli/core');
 const axios = require('axios');
 
 module.exports = fetch;
