@@ -1,6 +1,13 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "init": "yarn && lerna bootstrap",
+    "format": "prettier --config .prettierrc --write \"packages/**/*.{js,jsx,ts,tsx}\"",
+    "eslint": "eslint packages/ --fix --cache --quiet --ext .js,.jsx,.ts,.tsx",
+    "stylelint": "stylelint 'packages/**/*.less' --fix --cache",
+    "preRelease": "lerna run clean && lerna run build"
+  },
   "devDependencies": {
     "lerna": "^4.0.0"
   }

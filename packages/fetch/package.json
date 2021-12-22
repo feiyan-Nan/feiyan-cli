@@ -1,14 +1,11 @@
 {
-  "name": "@feiyan-cli/cece",
-  "version": "1.0.3",
+  "name": "@feiyan-cli/fetch",
+  "version": "1.0.0",
   "description": "> TODO: description",
   "author": "nanfeiyan <3328921305@qq.com>",
   "homepage": "https://github.com/nanfeiyan123/feiyan-cli#readme",
   "license": "ISC",
-  "main": "lib/hahay.js",
-  "publishConfig": {
-    "access": "public"
-  },
+  "main": "lib/fetch.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -16,6 +13,9 @@
   "files": [
     "lib"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nanfeiyan123/feiyan-cli.git"
@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/nanfeiyan123/feiyan-cli/issues"
   },
-  "gitHead": "2ad66500422d789c63274aba09d0838a5ef70b2c"
+  "dependencies": {
+    "@feiyan-cli/core": "^1.0.0",
+    "axios": "^0.24.0"
+  }
 }

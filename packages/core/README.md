@@ -1,11 +1,11 @@
-# `hahay`
+# `@feiyan-cli/core`
 
 > TODO: description
 
 ## Usage
 
 ```
-const hahay = require('hahay');
+const core = require('@feiyan-cli/core');
 
 // TODO: DEMONSTRATE API
 ```
