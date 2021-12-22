@@ -1,6 +1,6 @@
 {
   "name": "@feiyan-cli/fetch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> TODO: description",
   "author": "nanfeiyan <3328921305@qq.com>",
   "homepage": "https://github.com/nanfeiyan123/feiyan-cli#readme",
@@ -27,7 +27,7 @@
     "url": "https://github.com/nanfeiyan123/feiyan-cli/issues"
   },
   "dependencies": {
-    "@feiyan-cli/core": "^1.0.0",
+    "@feiyan-cli/core": "^1.0.1",
     "axios": "^0.24.0"
   }
 }
