@@ -1,11 +1,11 @@
 {
-  "name": "@nanfeiyan/test",
-  "version": "0.0.4",
+  "name": "hahay",
+  "version": "1.0.0",
   "description": "> TODO: description",
   "author": "nanfeiyan <3328921305@qq.com>",
   "homepage": "https://github.com/nanfeiyan123/feiyan-cli#readme",
   "license": "ISC",
-  "main": "lib/test.js",
+  "main": "lib/hahay.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -22,6 +22,5 @@
   },
   "bugs": {
     "url": "https://github.com/nanfeiyan123/feiyan-cli/issues"
-  },
-  "gitHead": "6b4949fd49705089340805ebb94defe52683b569"
+  }
 }
