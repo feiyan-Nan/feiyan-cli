@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "@feiyan-cli/test",
   "version": "0.0.2",
   "description": "> TODO: description",
   "author": "nanfeiyan <3328921305@qq.com>",
@@ -22,5 +22,6 @@
   },
   "bugs": {
     "url": "https://github.com/nanfeiyan123/feiyan-cli/issues"
-  }
+  },
+  "gitHead": "589ef12707700f1632f3706025e178cf58cdc444"
 }
