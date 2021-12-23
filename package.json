@@ -9,6 +9,7 @@
     "preRelease": "lerna run clean && lerna run build"
   },
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "typescript": "^4.5.4"
   }
 }
