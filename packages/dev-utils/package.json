@@ -25,6 +25,9 @@
     "clean": "rm -rf lib",
     "prepublishOnly": "npm run build"
   },
+  "dependencies": {
+    "chalk": "^4.0.0"
+  },
   "bugs": {
     "url": "https://github.com/nanfeiyan123/feiyan-cli/issues"
   }
