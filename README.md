@@ -46,3 +46,6 @@ lerna add @feiyan-cli/core --scope=@feiyan-cli/fetch 把@feiyan-cli/core放到@f
 
 npm i @typescript-eslint/eslint-plugin @typescript-eslint/parser chalk eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-babel eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-typescript -D
 
+
+lerna add @feiyan-cli/dev-utils --scope=@feiyan-cli/cli
+

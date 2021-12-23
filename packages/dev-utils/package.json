@@ -1,13 +1,11 @@
 {
-  "name": "@feiyan-cli/cli",
+  "name": "@feiyan-cli/dev-utils",
   "version": "1.0.1",
   "description": "> TODO: description",
   "author": "nanfeiyan <3328921305@qq.com>",
   "homepage": "https://github.com/nanfeiyan123/feiyan-cli#readme",
   "license": "ISC",
-  "bin": {
-    "feiyan": "lib/bin.js"
-  },
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib"
   },
@@ -29,9 +27,5 @@
   },
   "bugs": {
     "url": "https://github.com/nanfeiyan123/feiyan-cli/issues"
-  },
-  "dependencies": {
-    "@feiyan-cli/dev-utils": "^1.0.1",
-    "commander": "^8.3.0"
   }
 }
