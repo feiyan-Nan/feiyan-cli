@@ -13,4 +13,5 @@ printLogo();
 
 function registerCommand() {}
 
-console.log('Hello world!');
+console.log('Hello world');
+console.log('小破孩123');

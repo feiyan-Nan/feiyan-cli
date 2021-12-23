@@ -1,8 +1,11 @@
 {
   "name": "root",
-  "private": true,
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "init": "npm i && lerna bootstrap",
+    "init": "yarn && lerna bootstrap",
     "dev": "lerna run dev",
     "format": "prettier --config .prettierrc --write \"packages/**/*.{js,jsx,ts,tsx}\"",
     "eslint": "eslint packages/ --fix --cache --quiet --ext .js,.jsx,.ts,.tsx",
@@ -14,7 +17,7 @@
     "@types/fs-extra": "^9.0.13",
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
-    "chalk": "^5.0.0",
+    "chalk": "^4.0.0",
     "eslint": "^8.5.0",
     "eslint-config-airbnb": "^19.0.2",
     "eslint-config-prettier": "^8.3.0",
