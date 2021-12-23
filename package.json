@@ -2,7 +2,8 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "init": "yarn && lerna bootstrap",
+    "init": "npm i && lerna bootstrap",
+    "dev": "lerna run dev",
     "format": "prettier --config .prettierrc --write \"packages/**/*.{js,jsx,ts,tsx}\"",
     "eslint": "eslint packages/ --fix --cache --quiet --ext .js,.jsx,.ts,.tsx",
     "stylelint": "stylelint 'packages/**/*.less' --fix --cache",
@@ -10,11 +11,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "husky": ">=6",
-    "lerna": "^4.0.0",
-    "lint-staged": ">=10",
-    "prettier": "^2.5.1",
-    "typescript": "^4.5.4",
+    "@types/fs-extra": "^9.0.13",
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
     "chalk": "^5.0.0",
@@ -26,7 +23,12 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-typescript": "^0.14.0"
+    "eslint-plugin-typescript": "^0.14.0",
+    "husky": ">=6",
+    "lerna": "^4.0.0",
+    "lint-staged": ">=10",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "prettier --write"
