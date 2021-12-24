@@ -1,17 +1,31 @@
 #!/usr/bin/env node
-// import { Command } from 'commander';
+import { Command } from 'commander';
 import { printLogo } from './utils';
 
-// const program = new Command();
-// program
-//   .option('-d, --debug', 'output extra debugging')
-//   .option('-s, --small', 'small pizza size')
-//   .option('-p, --pizza-type <type>', 'flavour of pizza');
+const program = new Command();
 
-registerCommand();
 printLogo();
+registerCommand();
 
-function registerCommand() {}
+function registerCommand() {
+  program
+    .command('init [projectName]')
+    .description('init a new project')
+    .action((projectName) => {
+      console.log(`init a new project ${projectName}`);
+    });
+}
 
-console.log('Hello world');
-console.log('小破孩123');
+program.parse(process.argv);
+// if (process.argv[2] !== 'env' && checkEnv() === false) {
+//   switchEnv()
+//     .then(() => {
+//       program.parse(process.argv);
+//     })
+//     .catch((err) => {
+//       print.error(err);
+//       process.exit(0);
+//     });
+// } else {
+//   program.parse(process.argv);
+// }
