@@ -25,7 +25,6 @@ export function fetchLatestVersion() {
   try {
     const info = getNpmPackageInfo(FEIYAN_CLi_PACKAGE_NAME);
     const { latest: lastVersion } = info['dist-tags'];
-    console.log(lastVersion, 'HHH');
     return lastVersion;
   } catch (e) {}
 
