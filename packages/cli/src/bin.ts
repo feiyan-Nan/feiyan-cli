@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 import { Command } from 'commander';
 import { printLogo } from './utils';
-
+import { print } from '@feiyan-cli/dev-utils';
+import init from '@feiyan-cli/init';
+import locale from './locale';
 const program = new Command();
 
 printLogo();
@@ -13,7 +15,17 @@ function registerCommand() {
     .description('init a new project')
     .action((projectName) => {
       console.log(`init a new project ${projectName}`);
+      init();
     });
+
+  program.on('--help', function () {
+    print.divider();
+    print(locale.TIP_SHOW_HELP);
+    print('Examples:');
+    print('  $ feiyan sync --screenshot');
+    print('  $ feiyan group --id 1');
+    print.divider();
+  });
 }
 
 program.parse(process.argv);
