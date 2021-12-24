@@ -33,6 +33,6 @@
   "dependencies": {
     "@feiyan-cli/dev-utils": "^1.0.6",
     "@feiyan-cli/init": "^1.0.6",
-    "commander": "^8.3.0"
+    "commander": "^4.1.1"
   }
 }

@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 import chalk from 'chalk';
-import { Command } from 'commander';
+import program from 'commander';
 import { printLogo, fetchLatestVersion } from './utils';
 import { print } from '@feiyan-cli/dev-utils';
 import init from '@feiyan-cli/init';
 import locale from './locale';
-const program = new Command();
 
 printLogo();
 registerCommand();
@@ -25,15 +24,9 @@ function registerCommand() {
   program.option('-v, --version', locale.CMD_DES_VERSION, async () => {
     const { version } = require('../package.json');
     print(chalk.green(locale.PREFIX_CURRENT_VERSION), version);
-    console.log('qian');
-    let latestVersion;
-    try {
-      latestVersion = await fetchLatestVersion();
-    } catch (e) {
-      console.log(e, 'error');
-    }
 
-    console.log(latestVersion, 'KKKKK');
+    const latestVersion = await fetchLatestVersion();
+
     if (latestVersion) {
       print();
       if (latestVersion !== version) {
@@ -53,14 +46,14 @@ function registerCommand() {
   //     console.log(`switch env ${sw}`);
   //   });
 
-  // program.on('--help', function () {
-  //   print.divider();
-  //   print(locale.TIP_SHOW_HELP);
-  //   print('Examples:');
-  //   print('  $ feiyan sync --screenshot');
-  //   print('  $ feiyan group --id 1');
-  //   print.divider();
-  // });
+  program.on('--help', function () {
+    print.divider();
+    print(locale.TIP_SHOW_HELP);
+    print('Examples:');
+    print('  $ feiyan sync --screenshot');
+    print('  $ feiyan group --id 1');
+    print.divider();
+  });
 }
 
 // console.log(process.argv, 'process.argv');
