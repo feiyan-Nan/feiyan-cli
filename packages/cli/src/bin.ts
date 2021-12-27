@@ -58,6 +58,7 @@ function registerCommand() {
 
 // console.log(process.argv, 'process.argv');
 program.parse(process.argv);
+console.log('kk');
 // if (process.argv[2] !== 'env' && checkEnv() === false) {
 //   switchEnv()
 //     .then(() => {
