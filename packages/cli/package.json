@@ -1,6 +1,6 @@
 {
   "name": "@feiyan-cli/cli",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "> TODO: description",
   "author": "nanfeiyan <3328921305@qq.com>",
   "homepage": "https://github.com/nanfeiyan123/feiyan-cli#readme",
@@ -31,8 +31,8 @@
     "url": "https://github.com/nanfeiyan123/feiyan-cli/issues"
   },
   "dependencies": {
-    "@feiyan-cli/dev-utils": "^1.0.8",
-    "@feiyan-cli/init": "^1.0.8",
+    "@feiyan-cli/dev-utils": "^1.0.9",
+    "@feiyan-cli/init": "^1.0.9",
     "commander": "^4.1.1",
     "inquirer": "^7.2.0"
   },
