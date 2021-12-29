@@ -1,6 +1,6 @@
 import inquirer from 'inquirer';
 import locale from './locale';
-import { getGlobalInfo, print } from '@feiyan-cli/dev-utils';
+import { getGlobalInfo, print, writeGlobalInfo } from '@feiyan-cli/dev-utils';
 
 export function printLocale() {
   const { locale: currentLocale } = getGlobalInfo();
@@ -26,6 +26,5 @@ export async function switchLocale() {
       { name: locale.TIP_LOCALE_SYSTEM, value: 'system' },
     ],
   });
-  console.log(nextLocale);
   writeGlobalInfo({ locale: nextLocale });
 }

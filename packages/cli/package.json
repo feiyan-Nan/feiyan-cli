@@ -35,5 +35,6 @@
     "@feiyan-cli/init": "^1.0.8",
     "commander": "^4.1.1",
     "inquirer": "^7.2.0"
-  }
+  },
+  "gitHead": "518997637d75c93908457918d1abce723153e7c4"
 }

@@ -30,5 +30,6 @@
   },
   "dependencies": {
     "@feiyan-cli/dev-utils": "^1.0.8"
-  }
+  },
+  "gitHead": "518997637d75c93908457918d1abce723153e7c4"
 }
