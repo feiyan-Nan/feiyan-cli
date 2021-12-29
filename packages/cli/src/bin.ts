@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 import chalk from 'chalk';
 import program from 'commander';
-import { printLogo, fetchLatestVersion } from './utils';
+import { fetchLatestVersion, printLogo } from './utils';
 import { print } from '@feiyan-cli/dev-utils';
 import init from '@feiyan-cli/init';
 import locale from './locale';
+import { printLocale, switchLocale } from './locales';
 
 printLogo();
 registerCommand();
@@ -46,6 +47,21 @@ function registerCommand() {
   //     console.log(`switch env ${sw}`);
   //   });
 
+  // feiyan locale -s 切换语言
+  // feiyan locale
+  program
+    .command('locale')
+    .description(locale.CMD_DES_LOCALE)
+    .option('-s, --switch', locale.TIP_LOCALE_SWITCH)
+    .action(({ switch: sw }) => {
+      console.log(sw);
+      if (sw) {
+        switchLocale();
+      } else {
+        printLocale();
+      }
+    });
+
   program.on('--help', function () {
     print.divider();
     print(locale.TIP_SHOW_HELP);
@@ -57,8 +73,9 @@ function registerCommand() {
 }
 
 // console.log(process.argv, 'process.argv');
+
 program.parse(process.argv);
-console.log('kk');
+
 // if (process.argv[2] !== 'env' && checkEnv() === false) {
 //   switchEnv()
 //     .then(() => {
