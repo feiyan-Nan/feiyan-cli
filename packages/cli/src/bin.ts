@@ -9,8 +9,17 @@ import { printLocale, switchLocale } from './locales';
 
 printLogo();
 registerCommand();
+// console.log(Object.entries(['li', 'd']));
 
 function registerCommand() {
+  program.name('arco').usage('[commands] [options]').arguments('<cmd>');
+  // .action((cmd) => {
+  // if (VALID_SUBCOMMANDS.indexOf(cmd) === -1) {
+  //   print.error('arco', 'Invalid command...');
+  //   program.help();
+  // }
+  // });
+
   program
     .command('init [projectName]')
     .description('init a new project')
@@ -39,14 +48,6 @@ function registerCommand() {
     }
   });
 
-  // program
-  //   .command('env')
-  //   .description(locale.CMD_DES_ENV)
-  //   .option('-s, --switch', locale.TIP_ENV_SWITCH)
-  //   .action(({ switch: sw }) => {
-  //     console.log(`switch env ${sw}`);
-  //   });
-
   // feiyan locale -s 切换语言
   // feiyan locale
   program
@@ -54,7 +55,6 @@ function registerCommand() {
     .description(locale.CMD_DES_LOCALE)
     .option('-s, --switch', locale.TIP_LOCALE_SWITCH)
     .action(({ switch: sw }) => {
-      console.log(sw);
       if (sw) {
         switchLocale();
       } else {
