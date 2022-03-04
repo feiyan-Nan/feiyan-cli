@@ -1,14 +1,15 @@
 #!/usr/bin/env node
 import chalk from 'chalk';
 import program from 'commander';
-import { fetchLatestVersion, printLogo } from './utils';
 import { print } from '@feiyan-cli/dev-utils';
 import init from '@feiyan-cli/init';
+import { fetchLatestVersion, printLogo } from './utils';
 import locale from './locale';
 import { printLocale, switchLocale } from './locales';
 
 printLogo();
 registerCommand();
+
 // console.log(Object.entries(['li', 'd']));
 
 function registerCommand() {
