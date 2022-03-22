@@ -32,7 +32,7 @@ export default {
   TIP_GROUP_ADD_MEMBER: '添加团队成员（需团队管理员权限）',
   TIP_GROUP_REMOVE_MEMBER: '移除团队成员（需团队管理员权限）',
   TIP_TEMPLATE_CREATE: '基于已有项目创建物料模板',
-  TIP_SHOW_HELP: '如需查看某个子命令，可以使用子命令帮助，如：arco sync -h',
+  TIP_SHOW_HELP: '如需查看某个子命令，可以使用子命令帮助，如：feiyan sync -h',
 
   TIP_SELECT_LOCALE: '请设置 CLI 语言偏好',
   TIP_LOCALE_EN_US: 'English',

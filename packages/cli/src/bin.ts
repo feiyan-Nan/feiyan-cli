@@ -9,17 +9,20 @@ import { printLocale, switchLocale } from './locales';
 
 printLogo();
 registerCommand();
-
-// console.log(Object.entries(['li', 'd']));
+console.log('hahh');
+const VALID_SUBCOMMANDS = ['init', 'locale'];
 
 function registerCommand() {
-  program.name('arco').usage('[commands] [options]').arguments('<cmd>');
-  // .action((cmd) => {
-  // if (VALID_SUBCOMMANDS.indexOf(cmd) === -1) {
-  //   print.error('arco', 'Invalid command...');
-  //   program.help();
-  // }
-  // });
+  program
+    .name('feiyan')
+    .usage('[commands] [options]')
+    .arguments('<cmd>')
+    .action((cmd) => {
+      if (!VALID_SUBCOMMANDS.includes(cmd)) {
+        print.error('arco', 'Invalid command...');
+        program.help();
+      }
+    });
 
   program
     .command('init [projectName]')
@@ -30,7 +33,7 @@ function registerCommand() {
     });
 
   /**
-   * 版本
+   * 检测当前版本是不是最新版本
    */
   program.option('-v, --version', locale.CMD_DES_VERSION, async () => {
     const { version } = require('../package.json');
@@ -57,6 +60,7 @@ function registerCommand() {
     .option('-s, --switch', locale.TIP_LOCALE_SWITCH)
     .action(({ switch: sw }) => {
       if (sw) {
+        console.log(sw, process.cwd());
         switchLocale();
       } else {
         printLocale();
