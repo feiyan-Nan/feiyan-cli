@@ -1,6 +1,0 @@
-**/node_modules/**
-**/dist/**
-*.json
-**/template/**
-packages/*/lib/*
-packages/components/es/*
