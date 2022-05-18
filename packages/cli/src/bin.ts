@@ -9,7 +9,7 @@ import { printLocale, switchLocale } from './locales';
 
 printLogo();
 registerCommand();
-console.log('hahh');
+console.log('hahh-hello');
 const VALID_SUBCOMMANDS = ['init', 'locale'];
 
 function registerCommand() {
