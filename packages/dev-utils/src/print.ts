@@ -10,7 +10,7 @@ function print(color, ...args) {
     log(chalk[color](...args));
   }
 }
-
+console.log('ddd');
 function log(...args) {
   console.log(...args);
 }
