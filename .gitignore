@@ -69,6 +69,5 @@ isolate/arco-doc-site-components/lib
 
 **/.DS_Store
 
-package-lock.json
 
 packages/*/lib
