@@ -1,0 +1,31 @@
+{
+  "name": "@feiyan-cli/db",
+  "version": "0.0.0",
+  "description": "localStorage and sessionStorage database",
+  "author": "nanfeiyan <3328921305@qq.com>",
+  "homepage": "https://github.com/nanfeiyan123/feiyan-cli#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanfeiyan123/feiyan-cli.git"
+  },
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
+    "clean": "rm -rf lib",
+    "prepublishOnly": "npm run build"
+  },
+  "bugs": {
+    "url": "https://github.com/nanfeiyan123/feiyan-cli/issues"
+  }
+}
